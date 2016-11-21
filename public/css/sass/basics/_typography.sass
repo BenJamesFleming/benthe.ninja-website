@@ -1,0 +1,74 @@
+h1,
+h2,
+h3,
+h4,
+h5
+  font-family: $header-font !important
+  color: $text-color
+  margin: 0
+  letter-spacing: 0.01em !important
+
+h1
+  font-size: 72px
+
+  @media (max-width: $break-size)
+    font-size: 46px
+
+h2
+  font-size: 50px
+
+h3
+  font-size: 22px
+  display: inline-block
+
+  @media (max-width: $break-size)
+    font-size: 14px
+
+  &.small
+    font-size: 24px
+    margin: 10px 0
+
+  &.disabled
+    color: $disabled-text-color
+
+  &.tight
+    margin: 0
+    line-height: 0.8em
+    padding: 10px 0
+    padding-left: 10px
+    border-left: 4px solid #444
+
+  &.underline
+    position: relative
+
+    &::after
+      content: " "
+      position:  absolute
+      bottom: -6px
+      left: 0
+      right: 0
+      height: 2px
+      background:  $disabled-text-color
+
+p
+  font-size: 18px !important
+  letter-spacing: 1px !important
+  margin: 3px 0 !important
+
+  strong
+    margin-right: 5px
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+
+.warning
+  margin: 10px 0
+
+hr
+  height: 4px
+  border: none
+  background: $white
+  width: 100%

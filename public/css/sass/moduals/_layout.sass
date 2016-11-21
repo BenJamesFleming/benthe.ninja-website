@@ -1,0 +1,39 @@
+.wrapper
+  width: $wrapper-width
+  min-height: 100vh
+  max-height: 100vh
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  box-sizing: border-box
+
+  .text
+    width: 100%
+    padding-left: 10px
+    border-left: 4px solid $white
+    display: flex
+    flex-direction: column
+    align-items: space-between
+    justify-content: flex-start
+
+    h4,
+    h3,
+    h1
+      display: flex
+      width: 100%
+      align-items: center
+      justify-content: flex-start
+
+    h3,
+    h4
+      margin-left: 7px
+
+      @media (max-width: $break-size)
+        margin-left: 5px
+
+
+  @media (max-width: $break-size)
+    width: 95%
